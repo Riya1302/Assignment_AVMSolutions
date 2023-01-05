@@ -363,9 +363,9 @@
   <div class="card-container">
     <h1>Wecome to DigiSpace! </h1>
   </div>
-  <div class="card-container" style="padding 20px">
+  <!-- <div class="card-container" style="padding 20px">
     <h2>Choose what you want to Display </h2>
-  </div>
+  </div> -->
 
 
 <!-- Using Items Input -->
@@ -401,8 +401,8 @@
   </ng-select>
 </div> -->
 
-<div class="col-md-12 no-padding">
-  <!-- <label>Click to Choose</label> -->
+<!-- <div class="col-md-12 no-padding">
+ <label>Click to Choose</label> 
   <select class="form-control select2" [(ngModel)]="selected" type="text" style="padding: 0px; margin: auto; width:50%; display: flex; justify-content: center; flex-direction:column;justify-content: space-around;">
    <option value="aq">Air Quality</option>
    <option value="temperature">Temperature</option>
@@ -410,15 +410,15 @@
    <option value="displays">Displays</option>
    <option value="lighting">Lighting</option>
   </select>
-</div>
-
+</div> -->
+<!-- 
 <div style="padding: 0px; margin: auto; width:50%; display: flex; justify-content: center; flex-direction:column;justify-content: space-around;">
 
 
   <div class="d-grid gap-2 d-md-block" style="color:#5448c8;padding: 40px;margin: auto; width:50%; display: flex;justify-content: center; flex-direction:column;justify-content: space-around;">
     <button class="btn btn-primary" type="button">Button</button>
   </div>
-</div>
+</div> -->
 
 
   <!-- <mat-card class="example-card">
@@ -435,7 +435,7 @@
   </mat-card> -->
 <ng-container [ngSwitch]="selected">
 <div style="display: flex;flex-wrap: wrap;padding: 50px;align-content: space-between;align-items: center; justify-content: center">
-  <div class="card" style="padding: 20px;" *ngSwitchCase="'aq'">
+  <div class="card" style="padding: 20px;">
     <div class="card-body" style="padding: 20px">
       <h5 class="card-title" style=" font-size: 25px; margin: 0px;">Air Quality</h5>
       <div style="color:#5448c8;margin: auto; width:auto; display: flex;justify-content: center; flex-direction:row;justify-content: space-around;align-items:baseline">
@@ -451,7 +451,7 @@
     </div>
   </div>
 
-  <div class="card" style="padding: 20px;" *ngSwitchCase="'temperature'">
+  <div class="card" style="padding: 20px;" >
     <div class="card-body" style="padding: 20px">
       <h5 class="card-title" style=" font-size: 25px; margin: 0px;">Temperature</h5>
       <div style="color:#5448c8;margin: auto; width:auto; display: flex;justify-content: center; flex-direction:row;justify-content: space-around;align-items:baseline">
@@ -468,7 +468,7 @@
     </div>
   </div>
 
-    <div class="card1" style="padding: 20px" *ngSwitchCase="'audio'"> 
+    <div class="card1" style="padding: 20px" > 
     <div class="card-body" style="padding: 20px">
       <div class="heading" style="padding:20 px 20px 20px 20px;"><h5 class="card-title" style=" font-size: 25px; margin: 5px 20px 30px 30px;padding: 20 px 20px 20px 20px;">Audio</h5></div>
       <div style="color:#5448c8;margin: auto; width:auto; display: flex;justify-content: center; flex-direction:row;justify-content: space-around;align-items:baseline">
@@ -490,7 +490,7 @@
   </div>
 </div>
 
-<div class="card1" style="padding: 20px;" *ngSwitchCase="'displays'">
+<div class="card1" style="padding: 20px;">
   <div class="card-body" style="margin:0px 0px 0px -55px;padding: 20px">
     <div class="heading" style="padding:20 px 20px 20px 20px;"><h5 class="card-title" style=" font-size: 25px; margin: 5px 20px 30px 30px;padding: 20 px 20px 20px 20px;">Displays</h5></div>
     <div style="color:#5448c8;margin: auto; width:auto; display: flex;justify-content: center; flex-direction:row;justify-content: space-around;align-items:baseline">
@@ -515,7 +515,7 @@
 </div>
 </div>
 
-<div class="card1" style="padding: 20px" *ngSwitchCase="'lighting'">
+<div class="card1" style="padding: 20px" >
   <div class="card-body" style=" margin: -20px 0px 0px -55px !important;padding: 20px">
     <div class="heading" style="padding:20px 20px 20px 20px;"><h5 class="card-title" style=" font-size: 25px; margin: 5px 20px 30px 30px;padding: 20 px 20px 20px 20px;">Lighting</h5></div>
     <div style="color:#5448c8;margin: auto; width:auto; display: flex;justify-content: center; flex-direction:row;justify-content: space-around;align-items:baseline">
